@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+{{ partial "header.html" . }}
+
+<body>
+
+    {{ partial "browserupgrade.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    <main>
+
+        <header class="page header image-background overlay overlay-darker alpha-8 text-contrast bg-grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 mx-md-auto">
+                        <h1 class="post-title display-md-4 text-contrast bold">
+                            {{ .Title }}
+                        </h1>
+                    </div>
+
+                    <div class="col-md-3 mx-md-auto">
+                        <span class="post-title display-md-6 text-contrast fa-pull-right">
+                            {{ .Date.Format "2006-01-02" }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pt-2 bg-darker"></div>
+
+        <section class="blog-post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        
+                        <div class="blog-post-nav mb-3">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="media fa-pull-left">
+                                        <a href="{{ "/blog/" | relURL }}" class="align-middle text-dark bold">
+                                            <i class="me-3 pt-2 fa-2x rounded-circle icon-lg fa fa-arrow-circle-left"></i>
+
+                                            <div class="media-body small">
+                                                <span class="author">
+                                                    Back to Blog
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="media fa-pull-right">
+                                        <img class="me-3 rounded-circle icon-lg" src="{{ .Params.Avatar }}" alt="avatar url"/>
+
+                                        <div class="media-body small">
+                                            <span class="author">
+                                                by
+
+                                                <strong class="text-dark">
+                                                    {{ .Params.Author }}
+                                                </strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mb-5">
+
+                        <p class="text-dark">
+                            {{ .Content }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+</body>

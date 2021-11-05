@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+{{ partial "header.html" . }}
+
+<body>
+
+    {{ partial "browserupgrade.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    <main>
+
+        <header class="page header image-background overlay overlay-darker alpha-8 text-contrast bg-grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="bold display-md-4 text-contrast mb-4">
+                            The IRON Blog
+                        </h1>
+
+                        <p class="lead text-contrast">
+                            Keep up-to-date about what's happening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pt-2 bg-darker"></div>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="row gap-y">
+
+                    {{ range .Pages }}
+                    <div class="col-md-6 col-lg-4">
+                        <a href="{{ .Permalink }}">
+                            <div class="card card-blog shadow-box shadow-hover border-1 border-gray">
+                                <img class="card-img-top img-responsive d-none d-md-block" src="{{ .Params.CoverImage }}" alt="blog cover"/>
+
+                                <div class="card-body ">
+                                    <div class="d-flex align-items-center justify-content-between text-dark">
+                                        <div class="author d-flex align-items-center">
+                                            <img class="author-picture rounded-circle icon-md shadow-box" src="{{ .Params.Avatar }}" alt="avatar {{ .Params.Author }}">
+                                            
+                                            <p class="small my-0">
+                                                by
+
+                                                <span class="bold">
+                                                    {{ .Params.Author }}
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <nav class="nav">
+                                            <div class="d-flex align-items-center text-secondary blog-action blog-bookmark">
+                                                <i class="far fa-calendar me-2"></i>
+
+                                                <span class="small">
+                                                    {{ .Date.Format "2006-01-02" }}
+                                                </span>
+                                            </div>
+                                        </nav>
+                                    </div>
+
+                                    <hr>
+                                    
+                                    <p class="card-title regular text-dark bold">
+                                        {{ .Title }}
+                                    </p>
+
+                                    <p class="card-text text-dark">
+                                        {{ if gt (len .Summary) 200 }}
+                                        {{ slicestr .Summary 0 200 | htmlUnescape }}...
+                                        {{ else }}
+                                        {{ .Summary | htmlUnescape }}
+                                        {{ end }}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

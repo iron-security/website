@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+{{ partial "header.html" . }}
+
+<body>
+
+    {{ partial "browserupgrade.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    <main class="overflow-hidden">
+        <!-- ./Page header -->
+        <header class="header section image-background overlay overlay-darker alpha-8 text-contrast bg-grid">
+            <div class="container overflow-hidden">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="lead bold">
+                            <i class="fa fa-shield-virus mr-1"></i>
+                            Managed Threat Detection & Response
+                        </p>
+
+                        <div class="display-4 text-contrast light">
+                            Detecting, Preventing and Mitigating Threats
+
+                            <span class="text-contrast d-none d-md-block">
+                                <span class="typed bold display-4 display-md-3"
+                                data-strings='["on macOS", "on Windows", "on Linux", "on Kubernetes", "on Amazon Web Services", "on Google Cloud Platform"]'></span>
+                            </span>
+                        </div>
+
+                        <nav class="nav mt-5">
+                            <a href="https://go.crowdstrike.com/2021-Gartner-Magic-Quadrant-Epp-Report.html" target="_blank" rel="noopener noreferrer" class="btn btn-contrast btn-lg px-5">
+                                <i class="fa fa-book"></i>
+                                Read why we chose Crowdstrike
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="position-relative">
+            <div class="shape-divider shape-divider-bottom shape-divider-fluid-x text-darker">
+                <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="section bg-darker">
+            <div class="container text-center pt-3 pb-6"></div>
+        </div>
+
+        <section class="section mt-n6">
+            <div class="container pt-0">
+                <div class="row g-3 text-center text-md-start">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm shadow-hover lift-hover h-100 border-bottom-black">
+                            <div class="card-body bg-contrast p-4">
+                                <a href="javascript:;" class="text-darker">
+                                    <h4 class="bold me-3">
+                                        Detect Unknown Threats
+                                    </h4>
+                                </a>
+
+                                <p class="mt-4">
+                                    Forget traditional signature-based detection and rely on EDR that can detect suspicious behavior and identify unknown threats.
+                                </p>
+                                
+                                <a href="https://www.crowdstrike.com/blog/tech-center/hunt-threat-activity-falcon-endpoint-protection/" 
+                                rel="noopener noreferrer" target="_blank" class="d-block d-md-flex align-items-center mt-auto text-dark">
+                                    Learn more
+                                    <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow-sm shadow-hover lift-hover h-100 border-bottom-black">
+                            <div class="card-body bg-contrast p-4">
+                                <a href="javascript:;" class="text-darker">
+                                    <h4 class="bold me-3">
+                                        Prevent Malicious Actions
+                                    </h4>
+                                </a>
+                                
+                                <p class="mt-4">
+                                    Actions categorized as potentially malicious or dangerous can be automatically blocked and reported for analysis to our triage team.
+                                </p>
+                                
+                                <a href="https://www.crowdstrike.com/blog/tech-center/how-to-get-better-visibility-with-falcon-insight/" 
+                                    rel="noopener noreferrer" target="_blank" class="d-block d-md-flex align-items-center mt-auto text-dark">
+                                    Learn more
+                                    <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow-sm shadow-hover lift-hover h-100 border-bottom-black">
+                            <div class="card-body bg-contrast p-4"><a href="javascript:;" class="text-darker">
+                                    <h4 class="bold me-3">
+                                        Perform Incident Response
+                                    </h4>
+                                </a>
+
+                                <p class="mt-4">
+                                    We can perform our incident reponse remotely, even including isolating a host on network level to perform further analysis.
+                                </p>
+                                
+                                <a href="https://www.crowdstrike.com/blog/tech-center/remote-remediation-real-time-response/" 
+                                rel="noopener noreferrer" target="_blank" class="d-block d-md-flex align-items-center mt-auto text-dark">
+                                    Learn more
+                                    <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-contrast edge bottom-right" id="threatreport">
+            <div class="container">
+                <div class="row align-items-center text-center text-lg-left">
+                    <div class="col-12 col-md-7 col-lg-7 text-center text-md-start">
+                        <a class="small text-primary bold" href="https://www.crowdstrike.com/global-threat-report/" rel="noopener noreferrer" target="_blank">
+                            <i class="fa fa-book stroke-primary mr-3"></i>
+                            Crowdstrike Global Threat Report 2021
+                        </a>
+                        <h2 class="bold">
+                            Bad stuff happens, but we're here to help.
+                        </h2>
+                        <p class="text-secondary">
+                            Last year state-sponsored adversaries infiltrated networks to steal valuable data on vaccine research and government responses to the pandemic,
+                            criminal adversaries introduced new business models and both eCrime and targeted intrusion adversaries stepped up their development efforts.
+                            Now is probably a good time to look into EDR protection. 
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-5 text-right">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="rounded border shadow-box shadow-hover p-3 p-sm-3 d-flex align-items-center flex-wrap bg-contrast">
+                                    <i class="fa fa-user-secret fa-2x text-dark me-4 stroke-secondary"></i>
+                                    <div class="text-start">
+                                        <p class="counter font-md bold m-0 text-dark">161</p>
+                                        <p class="m-0">Tracked Adversaries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rounded border shadow-box shadow-hover p-2 p-sm-3 d-flex align-items-center flex-wrap bg-contrast">
+                                    <i class="fa fa-ban text-dark fa-2x me-4 stroke-secondary"></i>
+                                    <div class="text-start">
+                                        <p class="counter font-md bold m-0 text-dark">75.000</p>
+                                        <p class="m-0">Stopped Breaches</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rounded border shadow-box shadow-hover p-2 p-sm-3 d-flex align-items-center flex-wrap bg-contrast">
+                                    <i class="fa fa-2x fa-bolt text-dark me-4 stroke-secondary"></i>
+                                    <div class="text-start">
+                                        <p class="counter font-md bold m-0 text-dark">7 Trillion</p>
+                                        <p class="m-0">Events per Week</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rounded border shadow-box shadow-hover p-2 p-sm-3 d-flex align-items-center flex-wrap bg-primary text-contrast">
+                                    <i class="fa fa-2x fa-network-wired text-white me-4 stroke-contrast"></i>
+                                    <div class="text-start">
+                                        <p class="counter font-md bold m-0">4X</p>
+                                        <p class="m-0">Interactive Threats</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container bring-to-front">
+                <div class="row">
+                    <div class="col-lg-4 py-4 py-lg-0">
+                        <div class="media mb-5">
+                            <i class="fa fa-comments fa-2x text-dark"></i>
+
+                            <div class="media-body">
+                                <h4 class="bold">
+                                    You are always informed.
+                                </h4>
+
+                                <p>
+                                    Every detection and potential action is reported to you in real time over your company communication channel.
+                                    <br/>
+                                    <i class="fab fa-slack mr-3" title="Slack"></i>
+                                    <i class="fa fa-users mr-3" title="Microsoft Teams"></i>
+                                    <i class="fa fa-envelope mr-3" title="Email"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="media mb-5">
+                            <i class="fa fa-headset fa-2x text-dark"></i>
+
+                            <div class="media-body">
+                                <h4 class="bold">
+                                    We are here to help.
+                                </h4>
+                                <p>
+                                    If you have a question around our service, vulnerabilities or impact, ask us for technical advice and let us delve into your question.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <i class="fa fa-couch fa-2x text-dark"></i>
+
+                            <div class="media-body">
+                                <h4 class="bold">
+                                    Never break your flow.
+                                </h4>
+                                <p>
+                                    Stay within your company tools where you feel most comfortable. We will reach you the way you prefer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 mt-4 mx-auto">
+                        <img src="/img/example/slack.png" class="w-100 d-none d-md-block img-responsive" alt="slack"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container bring-to-front">
+                <div class="row gap-y">
+                    <div class="col-md-6">
+
+                        <div class="rounded shadow-box bg-contrast mt-4">
+                            <div class="d-flex align-items-center px-3">
+                                <div class="flex-fill my-3 ps-3 b-l">
+                                    <p class="bold text-primary my-0">
+                                        <i class="fa fa-bolt mr-3"></i>
+                                        Agent signal Collection
+                                    </p>
+                                    <p class="my-0 text-secondary">
+                                        The agent collects and ships security telemetry to the Threat Cloud securely.
+                                        In case no network is available, on-device detection is performed.
+                                        We support most common platforms including Kubernetes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded shadow-box bg-contrast mt-4">
+                            <div class="d-flex align-items-center px-3">
+                                <div class="flex-fill my-3 ps-3 b-l">
+                                    <p class="bold text-primary my-0">
+                                        <i class="fa fa-project-diagram mr-3"></i>
+                                        Cloud signal aggregation & detection
+                                    </p>
+                                    <p class="my-0 text-secondary">
+                                        Signals are analyzed using crowdsourced static rulesets, Machine Learning models and threat intelligence to aggregate, identify and classify threats.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded shadow-box bg-contrast mt-4">
+                            <div class="d-flex align-items-center px-3">
+                                <div class="flex-fill my-3 ps-3 b-l">
+                                    <p class="bold text-primary my-0">
+                                        <i class="fa fa-skull mr-3"></i>
+                                        Threat Prevention
+                                    </p>
+                                    <p class="my-0 text-secondary">
+                                        Signals are pushed through to static and Machine Learning models to aggregate into potential threats.
+                                        Crowdsourced threat intelligence intelligence to identify and classify threats.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded shadow-box bg-contrast mt-4">
+                            <div class="d-flex align-items-center px-3">
+                                <div class="flex-fill my-3 ps-3 b-l">
+                                    <p class="bold text-primary my-0">
+                                        <i class="fa fa-fire-extinguisher mr-3"></i>
+                                        Incident After Care
+                                    </p>
+                                    <p class="my-0 text-secondary">
+                                        Incident Response actions for further investigation and remediation of a detection is done completely remotely, even isolating an infection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-auto text-center text-md-start d-none d-md-block">
+                        <div class="mb-5">
+
+                            <h2 class="mt-3 bold">
+                                So how does it work?
+                            </h2>
+
+                            <p class="lead text-primary">
+                                We base ourselves upon a lightweight agent to collect security signals and perform automatic & manual threat hunting.
+                            </p>
+
+                             <p class="text-secondary">
+                                Getting the job done with the least amount of burden is our priority.
+                                <br/>
+                                We treat device telemetry as confidential information and always process it according to the European GDPR legislation in the EU-WEST region.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section b-b bg-dark text-white" id="modes">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2 class="bold text-white text-wrap">
+                        Four Characteristics
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 ms-lg-auto order-md-2">
+                        <nav id="sw-nav-developers" class="nav flex-md-column justify-content-between justify-content-md-start nav-pills nav-pills-light nav-fill">
+                            <a class="nav-item nav-link bold text-md-start active" href="#" data-step="1">
+                                <i class="icon fa fa-laptop-code"></i>
+                                Silent Mode
+                            </a>
+                            
+                            <a class="nav-item nav-link bold text-md-start" href="#" data-step="2">
+                                <i class="icon fa fa-bullhorn"></i>
+                                Alert Mode
+                            </a>
+                            
+                            <a class="nav-item nav-link bold text-md-start" href="#" data-step="3">
+                                <i class="icon fa fa-band-aid"></i>
+                                Prevent Mode
+                            </a>
+                            
+                            <a class="nav-item nav-link bold text-md-start" href="#" data-step="4">
+                                <i class="icon fas fa-broadcast-tower"></i>
+                                Incident Mode
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="swiper-container mt-4 mt-md-0 bg-darker" data-sw-navigation="#sw-nav-developers">
+                            <div class="swiper-wrapper line-numbers">
+                                <div class="swiper-slide">
+                                    <pre class="p-3"><code class="language-shell">% # we are happily compiling code without any performance impact!
+% go build -o my-huge-app ./...
+% # and note that the agent is not consuming a lot of resources
+% top -c d -l 1 -stats "COMMAND,PID,CPU,MEM" | grep -Ei 'com.crowdstrike'
+% com.crowdstrike. 1522   0.0  84739K</code></pre>
+                                </div>
+                                <div class="swiper-slide">
+                                    <pre class="p-3"><code class="language-shell"># some things may look suspicious but not enough to block
+# e.g. manually compiling code with the msbuild c++ engine ("living of the land")
+# and this alert will be triaged by us
+C:\Users\iron\.NET\ > MSBuild.exe msupdate.xml
+C:\Users\iron\.NET\ ></code></pre>
+                                </div>
+                                <div class="swiper-slide">
+                                    <pre class="p-3"><code class="language-shell">% # we will now try to extract the root password hash in a trivial way
+% # this process can trigger a detection and be most likely blocked
+% sudo grep root /etc/shadow
+  process exited
+% </code></pre>
+                                </div>
+                                <div class="swiper-slide">
+                                    <pre class="p-3"><code class="language-shell"># we can do incident response remotely for manually investigating threats
+C:\Users\iron\Downloads\> ls
+Directory listing for C:\Users\iron\Downloads -
+Name            Type       Size (bytes)
+suspicious.dll  .dll       196</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="section-heading text-center mbn-5" id="pricing">
+                    <h2 class="bold text-dark text-wrap">
+                        Service Pricing
+                    </h2>
+
+                    <span>
+                        Straight-forward pricing models, priced per endpoint per month.
+                    </span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mt-5">
+                        <div class="card text-center border-gray b-1">
+                            <div class="pricing card-header bg-primary text-contrast d-flex align-items-center flex-column">
+                                <span class="badge bg-dark badge-lg fs-5 mt-2">
+                                    EDR
+                                </span>
+
+                                <h4 class="bold mt-4 text-light">
+                                    Detection & Response
+                                </h4>
+
+                                <div class="pricing-value">
+                                    <span class="price bold">
+                                    € 10
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Full EDR coverage without the hard bits.
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush bold">
+                                <li class="list-group-item">
+                                    Windows, macOS, linux, containers
+                                </li>
+
+                                <li class="list-group-item">
+                                    Lightweight agent
+                                </li>
+
+                                <li class="list-group-item">
+                                    Human alert triage
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    Incident Response
+                                </li>
+
+                                <li class="list-group-item">
+                                    Proactive Threat Hunting
+                                </li>
+
+                                <li class="list-group-item">
+                                    Technical Support
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="/about/contact/" class="btn btn-dark text-light bold">
+                                    <i class="fa fa-arrow-circle-right"></i>
+                                    Get Detection & Response
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-5 d-none d-md-block">
+                        <div class="card text-center border-dark b-1 greyed-out">
+                            <div class="pricing card-header bg-light-gradient d-flex align-items-center flex-column">
+                                <span class="badge bg-dark badge-lg fs-5 mt-2">
+                                    Coming Soon
+                                </span>
+
+                                <h4 class="bold mt-4">
+                                    Vulnerabilies & Patching
+                                </h4>
+                                
+                                <p>
+                                    Detect missing patches & local vulnerabilities.
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Windows, macOS, linux, containers
+                                </li>
+
+                                <li class="list-group-item">
+                                    Lightweight agent
+                                </li>
+
+                                <li class="list-group-item">
+                                    Human alert triage
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    Incident Response
+                                </li>
+
+                                <li class="list-group-item">
+                                    Technical Support
+                                </li>
+
+                                <li class="list-group-item">
+                                    Continuous Threat Hunting
+                                </li>
+
+                                <li class="list-group-item">
+                                    Patch & vulnerability detection
+                                </li>
+
+                                <li class="list-group-item">
+                                    Patch & vulnerability triage
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-5 d-none d-md-block">
+                        <div class="card text-center border-gray b-1">
+                            <div class="pricing card-header bg-light-gradient d-flex align-items-center flex-column">
+                                <span class="badge bg-dark badge-lg fs-5 mt-2">
+                                    Under Review
+                                </span>
+
+                                <h4 class="bold mt-4">
+                                    Cloud Posture Security
+                                </h4>
+
+                                <p>
+                                    Discover cloud misconfigurations.
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Google Cloud, Amazon Web Services
+                                </li>
+
+                                <li class="list-group-item">
+                                    Service connector
+                                </li>
+
+                                <li class="list-group-item">
+                                    Human alert triage
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    Incident Response
+                                </li>
+
+                                <li class="list-group-item">
+                                    Technical Support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container pb-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>
+                            I'm sure you're still having loads of <span class="bold">questions</span>.
+                        </h2>
+                        <p class="lead">
+                            Let's go over the most common ones, but don't hesitate to just reach out for a talk.
+                        </p>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="accordion accordion-clean" id="faqs-accordion">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <a href="#" class="card-title btn text-dark" data-bs-toggle="collapse" data-bs-target="#q1">
+                                        <i class="fas fa-angle-down angle"></i>
+                                        What exactly is included in a tier package?
+                                    </a>
+                                </div>
+                                <div id="q1" class="collapse show" data-bs-parent="#faqs-accordion">
+                                    <div class="card-body">
+                                        Everything you need!
+                                        This includes help before, during and after the deployment, technical support, the actual sensors, ongoing support, alert triage, any integrations plus access to the platform.
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <a href="#" class="card-title btn text-dark" data-bs-toggle="collapse" data-bs-target="#q2">
+                                        <i class="fas fa-angle-down angle"></i>
+                                        What are the requirements?
+                                    </a>
+                                </div>
+                                <div id="q2" class="collapse" data-bs-parent="#faqs-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                <strong>Apple macOS</strong></br>
+                                                Monterey (12.0+), Big Sur (11.0+), Catalina (10.15+), Mojave (10.14+).
+                                            </li>
+
+                                            <li class="mt-2">
+                                                <strong>Windows Server</strong><br/>
+                                                2008 R2 SP1, 2012, 2016, 2019, 2022.
+                                            </li>
+
+                                            <li class="mt-2">
+                                                <strong>Windows</strong><br/>
+                                                7, 8.1, 10, 11.
+                                            </li>
+
+                                            <li class="mt-2">
+                                                <strong>linux</strong><br/>
+                                                Amazon Linux, CentOS, Debian, Oracle Linux, Red Hat, SUSE, Ubuntu, AWS ARM, Docker.
+                                                <br/>
+                                                Kernel compatibility is generally for LTS releases.
+                                            </li>
+
+                                            <li class="mt-2">
+                                                <strong>Kubernetes</strong><br/>
+                                                Google Kubernetes Engine, Red Hat Openshift, Amazon EKS.
+                                                <br/>
+                                                With a <emp>kernel-level sensor</emp> we deploy sensors to the worker nodes which run the Pods.
+                                                <br/>
+                                                If this is not possible, we can deploy <emp>sidecar containers</emp> which are licensed per Pod.
+                                                <br/>
+                                                This depends on your worker node OS and kernel version, please reach out to us.
+                                            </li>
+
+                                            <li class="mt-2">
+                                                <strong>Docker</strong><br/>
+                                                Yes, as a general container.
+                                            </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <a href="#" class="card-title btn text-dark" data-bs-toggle="collapse" data-bs-target="#q3">
+                                        <i class="fas fa-angle-down angle"></i>
+                                        How is this going to be billed?
+                                    </a>
+                                </div>
+                                <div id="q3" class="collapse" data-bs-parent="#faqs-accordion">
+                                    <div class="card-body">
+                                        Due to licensing agreements, we have to bill you yearly instead of monthly.
+                                        The amount of endpoints is taken as an average and recalculated at the end of the year.
+                                        In case your company grows, we only charge you for the remaining time of your original invoice.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <a href="#" class="card-title btn text-dark" data-bs-toggle="collapse" data-bs-target="#q4">
+                                        <i class="fas fa-angle-down angle"></i>
+                                        None of that makes sense.
+                                    </a>
+                                </div>
+                                <div id="q4" class="collapse" data-bs-parent="#faqs-accordion">
+                                    <div class="card-body">
+                                        Just reach out! We're super happy to explain it everything to you and address any concerns you might have.
+                                    </div>
+                                </div>
+                            </div>
+
+<!--
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <a href="#" class="card-title btn text-dark" data-bs-toggle="collapse" data-bs-target="#q4">
+                                        <i class="fas fa-angle-down angle"></i>
+                                        Does it only detect threats saved to my storage?
+                                    </a>
+                                </div>
+                                <div id="q4" class="collapse" data-bs-parent="#faqs-accordion">
+                                    <div class="card-body">
+                                        No, we equally detect threats in-memory, living-off-the-land or on-disk.
+                                    </div>
+                                </div>
+                            </div>
+-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light pt-6">
+            <div class="container bring-to-front py-0">
+                <div class="shadow bg-contrast p-5 rounded">
+                    <div class="row gap-y align-items-center text-center text-lg-start">
+                        <div class="col-12 col-md-6 py-4 px-5 b-md-r">
+                            <div class="mt-4 text-primary d-flex align-items-center">
+                                <h4 class="me-3">
+                                    <i class="fa fa-user-tie mr-3"></i>
+                                    It's recommended for business.
+                                </h4>
+                            </div>
+
+                            <p class="mt-4">
+                                You want to be safeguarding your company assets in the most cost effective way possible, taking into account your revenue stream and growth cycle.
+                                Our services scale along your company while still providing you with the best security protection for all of the prevalent system platforms.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 py-4 px-5">
+                            <div class="mt-4 text-info d-flex align-items-center">
+                                <h4 class="me-3">
+                                    <i class="fa fa-user-cog mr-3"></i>
+                                    It's recommended for IT.
+                                </h4>
+                            </div>
+
+                            <p class="mt-4">
+                                Building a SOC and monitoring team is resource intense and requires knowledge of the latest attack techniques which you might not have readily available internally.
+                                With the current state of the IT market it makes perfect sense to outsource specialized services in a cost-effective way so you can get back to building.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- ./CTA - Create Account -->
+        <section class="section bg-contrast edge top-left b-b">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column flex-md-row">
+                    <div class="text-center text-md-start">
+                        <p class="light mb-0 text-primary lead">
+                            Ready to start improving your security posture?
+                        </p>
+
+                        <h2 class="mt-0 bold">
+                            Try our Managed Detection & Response today.
+                        </h2>
+                    </div>
+
+                    <a href="/about/contact/" class="btn btn-dark mt-3 mt-md-0 ms-md-auto">
+                        Get your IRON account
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

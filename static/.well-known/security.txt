@@ -1,0 +1,6 @@
+Contact: mailto:help@iron.security
+Expires: 2025-12-30T11:00:00.000Z
+Acknowledgments: https://github.com/iron-security/website/blob/main/SECURITY.md
+Preferred-Languages: en
+Canonical: https://iron.security/.well-known/security.txt
+Hiring: https://www.linkedin.com/company/irondotsecurity/

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+{{ partial "header.html" . }}
+
+<body>
+
+    {{ partial "browserupgrade.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    <main class="overflow-hidden">
+        
+        <header class="page header image-background overlay overlay-darker alpha-8 text-contrast bg-grid">
+            <div class="container pb-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="bold display-md-4 text-contrast mb-4">
+                            Contact us
+                        </h1>
+
+                        <p class="lead text-contrast">
+                            Get in touch and let's have a chat about your business case.
+                            <br/>
+                            Fill out the form and we’ll be in touch as soon as possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pt-2 bg-darker"></div>
+
+        <section class="section mt-n7">
+            <div class="container bring-to-front pt-0">
+                <div class="row align-items-center gap-y">
+
+                    <div class="col-md-6">
+                        <div class="shadow bg-contrast p-4 rounded">
+
+                            <div id="alert-success" class="alert alert-success d-none" role="alert">
+                                <div class="bold">
+                                    <i class="fas fa-check mr-3"></i>
+                                    Thank you!
+                                </div>
+
+                                Your message has been sent, we will contact you as soon as possible.
+                            </div>
+
+                            <div id="alert-error" class="alert alert-danger d-none" role="alert">
+                                <div class="bold">
+                                    <i class="fas fa-times mr-3"></i>
+                                    Unable to send message.
+                                </div>
+
+                                Your message was not sent, please contact us on our email address.
+                            </div>
+
+                            <form id="frm-contact" action="" method="post" class="form form-contact" name="form-contact" data-response-message-animation="slide-in-up">
+                                
+                                <div id="divRecaptcha"></div>
+
+                                <input id="contact_crf" type="hidden" name="crf" value=""/>
+
+                                <div class="mb-4">
+                                    <label for="contact_email" class="text-dark bold mb-0">
+                                        Email address
+                                    </label>
+
+                                    <div id="emailHelp" class="small form-text text-secondary mt-0 mb-2">
+                                        We'll never share your email with anyone else nor use it for spam.
+                                    </div>
+                                    
+                                    <input type="email" autofocus name="email" id="contact_email" minlength="4" class="form-control bg-contrast" placeholder="user@company.com" required/>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="contact_email" class="text-dark bold">
+                                        Subject
+                                    </label>
+                                    
+                                    <input type="text" name="subject" id="contact_subject" minlength="3" class="form-control bg-contrast" placeholder="I am interested in EDR" value="Threat Detection & Response" required/>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="contact_email" class="text-dark bold">
+                                        Message
+                                    </label>
+                                    
+                                    <textarea name="message" id="contact_message" minlength="10" class="form-control bg-contrast" placeholder="I have a business that I'd like to secure." rows="8" required></textarea>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark btn-lg g-recaptcha"
+                                        id="btn-submit"
+                                        data-sitekey="6LdZcn8cAAAAAI8hsjJvPMD_5X4O1he6aeb3bUYg" 
+                                        data-callback='onSubmitCaptcha' 
+                                        data-action='submit'>
+                                        <i class="fa fa-envelope"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 ms-md-auto text-dark">
+
+                        <div class="d-flex mt-6">
+                            <div class="flex-fill">
+                                <span class="h5 bold">
+                                    Company details
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mt-4">
+                            <i class="fas fa-envelope font-l text-primary me-3"></i>
+                            <div class="flex-fill">
+                                <a class="text-dark" href="mailto:hello@iron.security">
+                                    hello@iron.security
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mt-md-4">
+                            <i class="fa fa-map-marker font-l text-primary me-3"></i>
+                            <div class="flex-fill">
+                                Kampenhout
+                                <div class="d-block">
+                                    Belgium
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mt-md-4">
+                            <i class="fa fa-balance-scale font-l text-primary me-3"></i>
+                            <div class="flex-fill">
+                                ironPeak services GCV
+                            </div>
+                        </div>
+
+                        <div class="d-flex mt-md-4">
+                            <i class="fa fa-credit-card font-l text-primary me-3"></i>
+                            <div class="flex-fill">
+                                BE76 0689 0974 0795
+                            </div>
+                        </div>
+
+                        <div class="d-flex mt-md-4">
+                            <i class="fa fa-building font-l text-primary me-4"></i>
+                            <div class="flex-fill">
+                                BE.0694.785.660
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <nav class="nav justify-content-center justify-content-md-start">
+                            <a href="https://github.com/iron-security/" rel="noreferrer noopener" target="_blank" class="btn btn-circle btn-sm btn-secondary me-3">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/irondotsecurity" rel="noreferrer noopener" target="_blank" class="btn btn-circle btn-sm btn-secondary me-3">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            
+                            <a href="https://twitter.com/irondotsecurity" rel="noreferrer noopener" target="_blank" class="btn btn-circle btn-sm btn-secondary me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/channel/UCoj6c36lWESR1DGbmzA6myw" rel="noreferrer noopener" target="_blank" class="btn btn-circle btn-sm btn-secondary me-3">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section b-b">
+            <div class="container">
+                <div class="row gap-y align-items-center text-center text-lg-start">
+                    <div class="col-12 col-md-6 py-4 px-5 b-md-r">
+                        <a href="javascript:;" class="mt-4 text-darker d-flex align-items-center">
+                            <h4 class="me-3">
+                                <i class="fa fa-dollar-sign stroke-darker"></i>
+                                Talk about Sales
+                            </h4>
+                        </a>
+
+                        <p class="mt-4">
+                            Looking for a custom quote? Need to tell us more about your goals?<br/>
+                            Want a little demonstration?
+                            Drop us a line at <a class="bold text-dark" href="mailto:hello@iron.security">hello@iron.security</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 px-5">
+                        <a href="javascript:;" class="mt-4 text-darker d-flex align-items-center">
+                            <h4 class="me-3">
+                                <i class="fa fa-cog stroke-darker"></i>
+                                Talk about Tech
+                            </h4>
+                        </a>
+                        <p class="mt-4">
+                            Any question about how to implement or work with our solutions?<br/>
+                            Don't fret, our tech team is ready for you at <a class="bold text-dark" href="mailto:help@iron.security">help@iron.security</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+       {{ partial "footer.html" . }}
+
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+     <script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+
+</html>

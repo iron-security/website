@@ -1,0 +1,150 @@
+<nav class="st-nav navbar main-nav navigation fixed-top" id="main-nav">
+    <div class="container">
+        <ul class="st-nav-menu nav navbar-nav">
+
+            <li class="st-nav-section nav-item">
+                <a href="#main" class="navbar-brand align-middle">
+                    <h1 class="logo d-md-inline-block d-md-none logo-sticky bold text-black align-middle mb-0">IRON</h1>
+                    <h1 class="logo d-md-inline-block d-none bold text-white align-middle mb-0">IRON</h1>
+                </a>
+            </li>
+
+            <li class="st-nav-section st-nav-primary nav-item">
+                <a class="nav-link bold" href="{{ .Site.BaseURL }}">
+                    Home
+                </a>
+
+                <a class="st-root-link item-products st-has-dropdown nav-link bold" data-dropdown="solution" href="#">
+                    Solutions
+                </a>
+
+                <a class="st-root-link nav-link bold" href="https://docs.iron.security">
+                    Docs
+                </a>
+
+                <a class="st-root-link item-products st-has-dropdown nav-link bold" data-dropdown="about" href="#">
+                    About
+                </a>
+            </li>
+
+            <li class="st-nav-section st-nav-secondary nav-item">
+                <a class="btn btn-outline me-3 px-3 disabled" href="login.html" target="_blank">
+                    <i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i>
+                    <span class="d-md-none d-lg-inline">
+                        Login
+                    </span>
+                </a>
+                
+                <a class="btn btn-solid px-3 border disabled" href="signup.html" target="_blank">
+                    <i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i>
+                    <span class="d-md-none d-lg-inline">
+                        Signup
+                    </span>
+                </a>
+            </li>
+        
+            <!-- Mobile Navigation -->
+            <li class="st-nav-section st-nav-mobile nav-item">
+                <button class="st-root-link navbar-toggler" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="st-popup">
+                    <div class="st-popup-container">
+                        <a class="st-popup-close-button">
+                            Close
+                        </a>
+
+                        <div class="st-dropdown-content-group">
+                            <h4 class="text-uppercase regular">
+                                Navigation
+                            </h4>
+                            
+                            <a class="regular text-dark bold" href="{{ .Site.BaseURL }}">
+                                Home
+                            </a>
+
+                            <a class="regular text-dark bold dropdown-item" href="{{ "/solution/edr/" | relURL }}">
+                                Threat Detection & Response
+                            </a>
+
+                            <!--
+                            <a class="regular text-dark bold disabled" href="#">
+                                Docs
+                            </a>
+                            -->
+
+                            <a class="regular text-dark bold" href="{{ "/about/company/" | relURL }}">
+                                About
+                            </a>
+
+                            <a class="regular text-dark bold" href="{{ "/about/contact/" | relURL }}">
+                                Contact
+                            </a>
+                        </div>
+
+                        <div class="st-dropdown-content-group bg-light b-t disabled">
+                            <a href="#" class="disabled text-primary">
+                                Sign in
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="st-dropdown-root">
+        <div class="st-dropdown-bg">
+            <div class="st-alt-bg"></div>
+        </div>
+
+        <div class="st-dropdown-arrow"></div>
+
+        <div class="st-dropdown-container">
+
+            <!-- solution dropdown -->
+            <div class="st-dropdown-section" data-dropdown="solution">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <a class="dropdown-item bold" href="{{ "/solution/edr/" | relURL }}">
+                            <i class="fa fa-shield-virus icon"></i>
+                            Threat Detection & Response
+                        </a>
+                        <!--
+                        <a class="dropdown-item bold disabled" href="{{ "/solution/mdm/" | relURL }}">
+                            <i class="fa fa-brain icon"></i>
+                            Endpoint Management
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <!--/ solution dropdown -->
+
+            <!-- about dropdown -->
+            <div class="st-dropdown-section" data-dropdown="about">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <a class="dropdown-item bold" href="{{ "/about/company/" | relURL }}">
+                            <i class="fa fa-address-card icon"></i>
+                            About the company
+                        </a>
+
+                        <a class="dropdown-item bold" href="{{ "/about/contact/" | relURL }}">
+                            <i class="fa fa-file-signature icon"></i>
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--/ about dropdown -->
+
+        </div>
+    </div>
+
+</nav>

@@ -1,0 +1,51 @@
+name = "ironsecurity-index"
+type = "webpack"
+
+workers_dev = false
+usage_model = 'bundled'
+compatibility_flags = []
+compatibility_date  = "2021-09-20"
+
+[vars]
+MAX_MESSAGE_LENGTH  = 50000
+CAPTCHA_MIN_SCORE   = 0.5
+CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/recaptcha/ www.gstatic.com/recaptcha/; connect-src 'self'; child-src www.google.com/recaptcha/; style-src 'self' fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; media-src 'self'; prefetch-src 'self';"
+CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
+
+# secrets that should be available via environment variables
+# ----------------------------------------------------------
+# CAPTCHA_PRIVATEKEY
+# MAILGUN_APIKEY
+# MAILGUN_DOMAIN
+# EMAIL_TO
+
+[env.dev.vars]
+MAX_MESSAGE_LENGTH  = 50000
+ENVIRONMENT = "dev" 
+CAPTCHA_MIN_SCORE   = 0.5
+CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/recaptcha/ www.gstatic.com/recaptcha/; connect-src 'self'; child-src www.google.com/recaptcha/; style-src 'self' fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; media-src 'self'; prefetch-src 'self';"
+CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
+[env.dev]
+webpack_config = "workers/webpack.config.dev.js"
+
+[env.prd.vars]
+MAX_MESSAGE_LENGTH  = 50000
+ENVIRONMENT = "dev" 
+CAPTCHA_MIN_SCORE   = 0.5
+CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/recaptcha/ www.gstatic.com/recaptcha/; connect-src 'self'; child-src www.google.com/recaptcha/; style-src 'self' fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; media-src 'self'; prefetch-src 'self';"
+CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
+[env.prd]
+routes      = ['iron.security/*', 'www.iron.security/*']
+zone_id     = '7e568a94bf4fe58607aec4b1677f80b1'
+account_id  = 'cc3c0a0320f6300a87a710edf2731e79'
+
+[build]
+command     = "hugo --minify --gc --config=config.yml"
+watch_dir   = "workers/"
+
+[build.upload]
+format      = "service-worker"
+
+[site]
+bucket      = "./generated/"
+entry-point = "./workers/"

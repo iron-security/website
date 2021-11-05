@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8" />
+
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <![endif]-->
+
+  <meta name="robots" content="all">
+
+  <title>
+    {{ .Title }}
+  </title>
+  <meta name="og:title" property="og:title" content="{{ .Title }}" />
+  
+  <meta name="description" content="{{ i18n "header_description" . }}" />
+  <meta name="keywords" content="{{ i18n "header_keywords" . }}" />
+
+  <!--<base href="{{ .Site.BaseURL }}">-->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link rel="apple-touch-icon" type="image/png" href="/img/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" />
+
+  {{ $cssFA := resources.Get "css/fontawesome.css" }}
+  {{ $cssAOS := resources.Get "css/aos.css" }}
+  {{ $cssODO := resources.Get "css/odometer-theme-minimal.css" }}
+  {{ $cssSWI := resources.Get "css/swiper-bundle.css" }}
+  {{ $cssDAS := resources.Get "css/theme.css" }}
+  {{ $cssPRI := resources.Get "css/prism.css" }}
+  {{ $cssCUS := resources.Get "css/custom.css" }}
+  {{ $cssBundle := slice $cssFA $cssAOS $cssODO $cssSWI $cssDAS $cssPRI $cssCUS | resources.Concat "css/bundle.css" | resources.Minify | fingerprint }}
+  <link rel="stylesheet" type="text/css" href="{{ $cssBundle.Permalink }}" crossorigin="anonymous" integrity="{{ $cssBundle.Data.Integrity }}">
+</head>

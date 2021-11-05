@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+{{ partial "header.html" . }}
+
+<body>
+
+    {{ partial "browserupgrade.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    <main class="overflow-hidden">
+
+      <header class="page section image-background overlay overlay-darker alpha-8 text-contrast bg-grid bg-darker">
+        <div class="container overflow-hidden">
+          <div class="row pt-6 pb-3">
+              <div class="col-md-6">
+                <p class="lead d-flex align-items-center my-0 bold">
+                    <i class="fas fa-broadcast-tower me-2"></i>
+                    Managed Threat Detection & Response
+                </p>
+
+                  <div class="display-4 text-contrast light mt-5">
+                    <span class="h1 bold text-contrast font-lg display-lg-2 pb-5">
+                        Securing today
+                        <span class="d-block light font-lg">
+                        for your tomorrow
+                        </span>
+                    </span>
+                  </div>
+
+                  <p class="lead mt-5">
+                      Securing you should be invisible and automagically mitigate security incidents.
+                      No technical mumbo-jumbo required.
+                  </p>
+
+                  <p>
+                    We protect your endpoints, servers & cloud against advanced security threats.
+                  </p>
+
+                  <div class="nav mt-5 align-items-center">
+                      <a href="/about/contact/" class="btn btn-lg btn-dark shadow me-3 px-4 text-capitalize">
+                      <i class="fa fa-arrow-right mr-1e"></i>
+                      Start securing your assets now
+                      </a>
+                  </div>
+              </div>
+
+              <!--
+              <div class="col-md-6 col-lg-5 ms-lg-auto position-relatice d-none d-md-block">
+                <div data-aos="fade-left">
+                  <div class="browser border">
+                    <div class="screen">
+                      <img
+                        src="/img/example/dashboard.png"
+                        class="img-responsive"
+                        alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </div>
+        </header>
+
+        <div class="section bg-darker">
+            <div class="container text-center pb-5 pt-0">
+
+              <div class="partners d-none d-md-block">
+                <div class="container pb-0 pt-5">
+                  <div
+                    class="swiper-container"
+                    data-sw-show-items="5"
+                    data-sw-space-between="30"
+                    data-sw-autoplay="2500"
+                    data-sw-loop="true"
+                  >
+                    <div class="swiper-wrapper align-items-center text-white">
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-coins"></i>
+                        <span class="text-lg">
+                            Ransomware Threats
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-fire-alt"></i>
+                        <span class="text-lg">
+                            Malware Infections
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-crosshairs"></i>
+                        <span class="text-lg">
+                            Exploit Execution
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-bomb"></i>
+                        <span class="text-lg">
+                            Outdated Systems
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <svg class="fas mr-3" height="1em" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pegasus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-pegasus fa-w-18"><path fill="currentColor" d="M575.92 76.6c-.01-8.13-3.02-15.87-8.58-21.8-3.78-4.03-8.58-9.12-13.69-14.5 11.06-6.84 19.5-17.49 22.18-30.66C576.85 4.68 572.96 0 567.9 0H447.92c-70.69 0-128 57.31-128 128-63.92 0-104.2-36.78-127.66-90.27-3.22-7.35-13.61-7.76-17.04-.5C165.49 57.82 160 80.8 160 105.1c0 67.04 51.01 133.09 128 147.74v3.17c-82.89 0-143.33-57.52-157.03-122.86-16.72 5.47-31.62 14.98-42.97 27.97V160c-48.53 0-88 39.47-88 88v56c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-56c0-13.22 6.87-24.39 16.78-31.68-.21 2.58-.78 5.05-.78 7.68 0 27.64 11.84 52.36 30.54 69.88l-25.72 68.6a63.945 63.945 0 0 0-2.16 37.99l24.85 99.41A15.982 15.982 0 0 0 107.02 512h65.96c10.41 0 18.05-9.78 15.52-19.88l-26.31-105.26 23.84-63.59L320 345.6V496c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V318.22c19.74-20.19 32-47.75 32-78.22 0-.22-.07-.42-.08-.64V136.89l16 7.11 18.9 37.7c7.45 14.87 25.05 21.55 40.49 15.37l32.55-13.02a31.997 31.997 0 0 0 20.12-29.74l-.06-77.71zm-64 19.4c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z" class=""></path>
+                        </svg>
+                        <span class="text-lg">
+                            Pegasus Spyware
+                        </span>
+                      </div>
+
+<!--
+                      <div class="swiper-slide">
+                        <i class="fa fa-save"></i>
+                        <span class="text-lg">
+                            Missing Disk Encryption
+                        </span>
+                      </div>
+-->
+                      <div class="swiper-slide">
+                        <i class="fa fa-virus"></i>
+                        <span class="text-lg">
+                            Malware &amp; Viruses
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-bug"></i>
+                        <span class="text-lg">
+                            Unpatched Software
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-user-shield"></i>
+                        <span class="text-lg">
+                            Bruteforce Attempts
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-ghost"></i>
+                        <span class="text-lg">
+                            Zeroday attacks
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-user-secret"></i>
+                        <span class="text-lg">
+                            Suspicious Activity
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-user-shield"></i>
+                        <span class="text-lg">
+                            Device Hardening
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-cloud"></i>
+                        <span class="text-lg">
+                            Cloud Threats
+                        </span>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <i class="fa fa-box"></i>
+                        <span class="text-lg">
+                            Container Security
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+
+        <section class="section bg-white">
+            <div class="container bring-to-front">
+                <div class="section-heading text-center">
+                    <h2 class="bold text-dark">
+                      Why you should go IRON
+                    </h2>
+
+                    <p class="lead text-dark d-none d-md-block">
+                      We believe every organization that does not have a large security team should make use of Managed threat Detection & Response to be optimally prepared for and respond quickly to todays cybersecurity threats.
+                    </p>
+                </div>
+                <div class="row gap-y">
+                    <div class="col-md-6">
+                        <div class="rounded bg-contrast shadow-box image-background off-left-background lift-hover p-4 pl-6 pl-md-9">
+                            <h3 class="bold">
+                              <i class="fa fa-user-check"></i>
+                              Lack of In-House Talent
+                            </h3>
+                            <p class="text-secondary mb-0">
+                              Cybersecurity analysts and Incident Responders require a specific set of skills and talents to excell at their work.
+                              With the current state of the market, this is very hard to find and hire for organisations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rounded bg-contrast shadow-box image-background off-left-background lift-hover p-4 pl-6 pl-md-9">
+                            <h3 class="bold">
+                              <i class="fa fa-cloud-showers-heavy"></i>
+                              Complex Threat Landscape
+                            </h3>
+                            <p class="text-secondary mb-0">
+                              Todays threats, tactics and techniques are more advanced then ever.
+                              You need various technologies, detection techniques and correlate a lots of data to be able to get the right picture to act.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rounded bg-contrast shadow-box image-background off-left-background lift-hover p-4 pl-6 pl-md-9">
+                            <h3 class="bold">
+                              <i class="fa fa-bell-slash"></i>
+                              Alert Fatigue
+                            </h3>
+                            <p class="text-secondary mb-0">
+                              It is very common to either miss a lot of false negatives or get swamped with abundant security alerts.
+                              You need human triage to be able to respond quickly to only the real threats.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rounded bg-contrast shadow-box image-background off-left-background lift-hover p-4 pl-6 pl-md-9">
+                            <h3 class="bold">
+                              <i class="fa fa-chart-line"></i>
+                              Scalable and Predicable Cost
+                            </h3>
+                            <p class="text-secondary mb-0">
+                              Regular security solutions are very costly and can be intense to maintain.
+                              You should get a simple pricing model that's adapted to the size and need of your organization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+      <section class="section features">
+        <div class="container">
+          <div class="section-heading text-center">
+            <h2 class="bold text-dark">
+                So how does this work?
+            </h2>
+            <p class="lead text-dark">
+              Let's be honest, we shouldn't reinvent the wheel.
+              We trust upon top market solutions to keep an eye on your company without any performance impact.
+              We consume and triage thousands of security signals to respond to potential incidents.
+              You do not need to worry anymore about malware, ransomware, persistent threats, alert fatigue or even hidden threats.
+              We got your back.
+            </p>
+          </div>
+          <div class="row gap-y text-center text-md-start">
+            <div class="col-md-4">
+              <div class="card shadow-hover lift-hover">
+                <div class="card-body p-5">
+                  <i class="text-dark mb-3 stroke-primary fa fa-user-tie fa-5x"></i>
+                  <h5 class="bold">1. Register Account</h5>
+                  <p class="">
+                    Create your IRON account, pick the appropriate account type and logon to the dashboard.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-hover lift-hover">
+                <div class="card-body p-5">
+                  <i class="text-dark mb-3 stroke-primary fa fa-cubes fa-5x"></i>
+                  <h5 class="bold">2. Connect your infrastructure</h5>
+                  <p class="">
+                    Your devices, servers or containers are connected to us via the lightweight agent or a native platform integration.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-hover lift-hover">
+                <div class="card-body p-5">
+                  <i class="text-dark mb-3 stroke-primary fa fa-bed fa-5x"></i>
+                  <h5 class="bold">3. Sit back &amp; Relax</h5>
+                  <p class="">
+                    We will notify you personally in case we shoot into action and will keep you up-to-date during incidents.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section overflow-hidden">
+        <div class="container bring-to-front">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 col-lg-5 me-lg-auto position-relative">
+              <div class="center-xy op-1">
+                <div
+                  class="
+                    shape shape-background
+                    rounded-circle
+                    shadow-lg
+                    bg-info
+                  "
+                  data-aos="zoom-in"
+                ></div>
+              </div>
+              <div class="mx-auto align-items-center d-none d-md-block">
+                <div class="browser front me-0 border">
+                  <div class="screen shadow-box">
+                    <img alt="crowdstrike platform" src="/img/crowdstrike/platform.webp" />
+                  </div>
+                  <div class="notch"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+              <div class="section-heading">
+                <a href="https://www.crowdstrike.com/" target="_blank" rel="noopener noreferrer">
+                  <img alt="crowdstrike platform" class="responsive" width="50" src="/img/crowdstrike/logo.png"/>
+                </a>
+
+                <h2 class="bold">
+                CrowdStrike&#174; for Detection
+                </h2>
+                <p class="lead">
+                Industry leading EDR vendor that stops breaches.</p>
+              </div>
+              <div class="row gap-y">
+                <div class="col-md-6">
+                  <div
+                    class="
+                      d-flex
+                      flex-column flex-lg-row
+                      align-items-center align-items-md-start
+                    "
+                  >
+                  <span class="bg-light p-3 rounded d-flex align-items-center justify-content-center mx-auto me-md-3">
+                    <i class="fas fa-2x fa-headset text-dark"></i>
+                  </span>
+                    <div class="flex-fill mt-3 mt-md-0">
+                      <h5 class="bold mt-0 mb-1">Cross-platform</h5>
+                      <p class="m-0 d-md-none d-lg-block">
+                        Linux, macOS, Windows & linux containers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="
+                      d-flex
+                      flex-column flex-lg-row
+                      align-items-center align-items-md-start
+                    "
+                  >
+                  <span class="bg-light p-3 rounded d-flex align-items-center justify-content-center mx-auto me-md-3">
+                    <i class="fas fa-2x fa-trophy text-dark"></i>
+                  </span>
+                    <div class="flex-fill mt-3 mt-md-0">
+                      <h5 class="bold mt-0 mb-1">Market leader</h5>
+                      <p class="m-0 d-md-none d-lg-block">
+                        Leading vendor of Endpoint Detection & Response.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="
+                      d-flex
+                      flex-column flex-lg-row
+                      align-items-center align-items-md-start
+                    "
+                  >
+                  <span class="bg-light p-3 rounded d-flex align-items-center justify-content-center mx-auto me-md-3">
+                    <i class="fas fa-2x fa-user-secret text-dark"></i>
+                  </span>
+                    <div class="flex-fill mt-3 mt-md-0">
+                      <h5 class="bold mt-0 mb-1">Invisible</h5>
+                      <p class="m-0 d-md-none d-lg-block">
+                        No noticeable performance impact on the endpoints.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="
+                      d-flex
+                      flex-column flex-lg-row
+                      align-items-center align-items-md-start
+                    "
+                  >
+                  <span class="bg-light p-3 rounded d-flex align-items-center justify-content-center mx-auto me-md-3">
+                    <i class="fas fa-2x fa-cloud text-dark"></i>
+                  </span>
+                    <div class="flex-fill mt-3 mt-md-0">
+                      <h5 class="bold mt-0 mb-1">Cloud Support</h5>
+                      <p class="m-0 d-md-none d-lg-block">
+                        Integrates with Google Cloud &amp; Amazon Web Services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+      <section class="section path-success">
+        <div class="shapes-container">
+          <div class="shape-ring absolute right top" data-aos="fade-up"></div>
+        </div>
+        <div class="container bring-to-front">
+          <div class="row gap-y align-items-center text-center text-lg-start">
+            <div class="col-md-6 col-lg-5 ms-lg-auto order-md-2 d-none d-md-block">
+              <div class="ms-auto align-items-center">
+                <div class="laptop front ms-0">
+                  <div class="">
+                    <img alt="kolide platform" class="responsive" width="550" src="https://d33wubrfki0l68.cloudfront.net/33db1b0b4f58351b8e79081e848d0eac7f5518b1/a7204/static/hero-image@2x-83bfb03dd539735a9d1f263e5f2603e5.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+              <div class="section-heading">
+                <a href="https://www.kolide.com/" target="_blank" rel="noopener noreferrer">
+                  <img alt="kolide platform" class="responsive" width="50" src="https://avatars.githubusercontent.com/u/19914378?s=280&v=4"/>
+
+                  <span class="ml-10 pl-10 badge bg-dark">
+                  COMING SOON
+                  </span>
+                </a>
+
+                <span class="badge badge-primary">
+                Coming Soon
+                </span>
+
+                <h2 class="bold">
+                Kolide&#174; for Configuration
+                </h2>
+
+                <p class="lead">
+                Manage the security of your endpoints like cattle, not pets.
+                </p>
+              </div>
+              <ul class="list-unstyled">
+                <li class="d-flex flex-column flex-md-row align-items-start">
+                  <div
+                    class="
+                      bg-light
+                      p-3
+                      rounded
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      mx-auto
+                      me-md-3
+                    "
+                  >
+                    <img alt="osquery" src="https://pbs.twimg.com/profile_images/567732844382801920/mTpcnHEJ_400x400.png" width="36" height="36"/>
+                  </div>
+                  <div class="media-body mt-3 mt-md-0">
+                    <h5 class="bold mt-0 mb-1">Builts upon Osquery</h5>
+                    <p class="m-0">
+                      Osquery is an extremely powerful open-source endpoint security visibility framework built by e.g. Facebook.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="d-flex flex-column flex-md-row align-items-start mt-5"
+                >
+                  <span
+                    class="
+                      bg-light
+                      p-3
+                      rounded
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      mx-auto
+                      me-md-3
+                    "
+                  >
+                    <i class="fas fa-2x fa-heart text-dark"></i>
+                  </span>
+                  <div class="media-body mt-3 mt-md-0">
+                    <h5 class="bold mt-0 mb-1">Honest Endpoint Management</h5>
+                    <p class="m-0">
+                      Kolide builds upon the <a href="https://honest.security" target="_blank" rel="noopener noreferrer">honest security</a> paradigm.
+                      Your users should be empowered for their security posture in a transparant way.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="d-flex flex-column flex-md-row align-items-start mt-5"
+                >
+                  <span
+                    class="
+                      bg-light
+                      p-3
+                      rounded
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      mx-auto
+                      me-md-3
+                    "
+                  >
+                    <i class="fas fa-2x fa-headset text-dark"></i>
+                  </span>
+                  <div class="media-body mt-3 mt-md-0">
+                    <h5 class="bold mt-0 mb-1">Cross-platform Featureset</h5>
+                    <p class="m-0">
+                      Kolide allows us to define a comparable security baseline for every supported endpoint platform.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+          <div class="shape-wrapper">
+              <div class="shape shape-background shape-right"></div>
+              <div class="shape shape-background top shape-left bg-info op-1"></div>
+          </div>
+
+          <div class="container pb-4">
+              <div class="row gap-y align-items-center py-5">
+                  <div class="col-md-6">
+                      <figure data-aos="fade-right" class="aos-init aos-animate">
+                        <img src="https://5studios.net/themes/dashcore/img/shps/payments/receive.svg" class="img-responsive" alt="">
+                      </figure>
+                  </div>
+                  <div class="col-md-6">
+                      <i class="fas fa-3x fa-shield-alt mb-2 text-dark"></i>
+                      <h2 class="bold text-capitalize text-dark">
+                        Protect your front and back door.
+                      </h2>
+                      <p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem dolorem eaque est eum fugit harum maiores minima nisi nobis, possimus, quas qui quo ratione sequi suscipit vel vero voluptas?</p><a href="javascript:;" class="btn gradient gradient-purple-blue text-contrast btn-rounded btn-outline-contrast bw-2 bold mt-4">Learn More</a></div>
+              </div>
+          </div>
+      </section>
+      
+
+      <section class="section counters bg-dark text-contrast mt-8 ">
+        <div class="container">
+          <div class="section-heading text-center">
+            <h2 class="bold text-contrast">
+               Processing of Signals
+            </h2>
+            <p class="lead">
+              We build additional intelligence &amp; functionality on top of our amazing solutions.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-md-3 text-center">
+              <i class="fa fa-desktop fa-2x d-none d-md-block pb-3"></i>
+              <p class="counter bold font-md mt-0">x</p>
+              <p class="m-0">Endpoints</p>
+            </div>
+            <div class="col-xs-4 col-md-3 text-center">
+              <i class="fa fa-bolt fa-2x d-none d-md-block pb-3"></i>
+              <p class="counter bold font-md mt-0">x</p>
+              <p class="m-0">Signals</p>
+            </div>
+            <div class="col-xs-4 col-md-3 text-center">
+              <i class="fa fa-bell fa-2x d-none d-md-block pb-3"></i>
+              <p class="counter bold font-md mt-0">x</p>
+              <p class="m-0">Alerts</p>
+            </div>
+            <div class="col-xs-4 col-md-3 text-center">
+              <i class="fa fa-radiation-alt fa-2x d-none d-md-block pb-3"></i>
+              <p class="counter bold font-md mt-0">x</p>
+              <p class="m-0">Interventions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screenshots coverflow d-none d-md-block">
+        <div class="container">
+          <div class="section-heading text-center">
+            <h2 class="bold display-4">Sneak-Peek Screenshots</h2>
+            <p class="text-secondary">
+              Coming Soon...
+              <!--Just to give you an idea of how things work.-->
+            </p>
+          </div>
+          <!--
+          <div
+            class="swiper-container"
+            data-sw-centered-slides="true"
+            data-sw-autoplay="2500"
+            data-sw-show-items="2"
+            data-sw-space-between="0"
+            data-sw-breakpoints='{"992": {"slidesPerView": 3}, "1200": {"slidesPerView": 5}}'
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/1.png"
+                  alt="..."
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/2.png"
+                  alt="..."
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/3.png"
+                  alt="..."
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/4.png"
+                  alt="..."
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/5.png"
+                  alt="..."
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-responsive"
+                  src="img/screens/app/6.png"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <div class="swiper-button swiper-button-next rounded-circle shadow">
+              <i class="fa fa-arrow-right text-primary"></i>
+            </div>
+            <div class="swiper-button swiper-button-prev rounded-circle shadow">
+              <i class="fa fa-arrow-left text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+      {{ partial "footer.html" . }}
+     
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

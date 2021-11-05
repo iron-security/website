@@ -1,0 +1,8 @@
+generated/
+resources/
+**/.DS_Store
+**/node_Modules/
+**/worker/
+**/dist/
+.mf/
+dev.env
