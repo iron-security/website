@@ -2,14 +2,16 @@
 title: "The Iron Initiative"
 date: 2019-07-25T14:35:57+02:00
 layout: blog
-draft: false
+draft: true
 avatar: /img/avatars/niels.png
 coverImage: /img/blog/iron-initiative.png
 author: Niels
 ---
 
-**It's time for something refreshing. We need honest and quality solutions that empower open knowledge and full transparency. Meet the IRON initiative.**
+**It's time for something refreshing. We need to do away with expensive bulky solutions, niche cybersecurity defence practices, shelved monitoring tools and a negative co-notation around cybersecurity. Anyone should be 'military-grade'.**
 
 ## **The Iron Initiative**
 
-You'll first hear yourself saying "what is this thing?".
+### The problem statement
+
+### 
