@@ -6,3 +6,4 @@ resources/
 **/dist/
 .mf/
 dev.env
+**/.hugo_build.lock

@@ -153,3 +153,8 @@ a.dropdown-item:hover {
 .mr-1e {
     margin-right: 1em;
 }
+
+.strong-top-bordered-card:before {
+    background-color: #374b63;
+    height: 12px;
+}
