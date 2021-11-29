@@ -4,12 +4,11 @@
 {{ $jsNOF := resources.Get "js/noframework.waypoints.js" }}
 {{ $jsSWI := resources.Get "js/swiper-bundle.js" }}
 {{ $jsAOS := resources.Get "js/aos.js" }}
-{{ $jsJQM := resources.Get "js/jquery.magnific-popup.js" }}
 {{ $jsCOM := resources.Get "js/common.js" }}
 {{ $jsSTR := resources.Get "js/stripe-menu.js" }}
 {{ $jsTYP := resources.Get "js/typed.js" }}
 {{ $jsPRI := resources.Get "js/prism.js" }}
 {{ $jsSIT := resources.Get "js/site.js" }}
 {{ $jsCUS := resources.Get "js/custom.js" }}
-{{ $jsBundle := slice $jsJQU $jsBOO $jsCOU $jsNOF $jsSWI $jsAOS $jsJQM $jsCOM $jsSTR $jsTYP $jsPRI $jsSIT $jsCUS | resources.Concat "js/bundle.js" | resources.Minify | fingerprint }}
+{{ $jsBundle := slice $jsJQU $jsBOO $jsCOU $jsNOF $jsSWI $jsAOS $jsCOM $jsSTR $jsTYP $jsPRI $jsSIT $jsCUS | resources.Concat "js/bundle.js" | resources.Minify | fingerprint }}
 <script src="{{ $jsBundle.Permalink }}" integrity="{{ $jsBundle.Data.Integrity }}" crossorigin="anonymous"></script> 
