@@ -10,7 +10,6 @@ jobs:
 
     permissions:
       contents: read
-      metadata: read
       pull-requests: write
 
     steps:
