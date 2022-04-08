@@ -10,5 +10,5 @@
 {{ $jsPRI := resources.Get "js/prism.js" }}
 {{ $jsSIT := resources.Get "js/site.js" }}
 {{ $jsCUS := resources.Get "js/custom.js" }}
-{{ $jsBundle := slice $jsJQU $jsBOO $jsCOU $jsNOF $jsSWI $jsAOS $jsCOM $jsSTR $jsTYP $jsPRI $jsSIT $jsCUS | resources.Concat "js/bundle.js" | resources.Minify | fingerprint }}
+{{ $jsBundle := slice $jsJQU $jsBOO $jsCOU $jsNOF $jsSWI $jsAOS $jsCOM $jsSTR $jsTYP $jsPRI $jsSIT $jsCUS | resources.Concat "js/bundle.js" | fingerprint }}
 <script src="{{ $jsBundle.Permalink }}" integrity="{{ $jsBundle.Data.Integrity }}" crossorigin="anonymous"></script>
