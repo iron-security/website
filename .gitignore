@@ -7,3 +7,5 @@ resources/
 .mf/
 dev.env
 **/.hugo_build.lock
+.dccache
+.vscode/
