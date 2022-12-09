@@ -4,7 +4,7 @@ dev: dev-wrangler-build dev-miniflare
 
 install:
 	brew install hugo npm
-	npm install -g miniflare @cloudflare/wrangler
+	npm install -g wrangler@beta
 
 dev-miniflare:
 	miniflare dist/worker.js --watch --debug --host=localhost --https --wrangler-config=wrangler.toml \
@@ -17,7 +17,7 @@ dev-wrangler-build:
 	wrangler build --env dev
 
 dev-wrangler:
-	wrangler dev --env dev --verbose
+	wrangler dev --env dev --local --local-protocol=http --host localhost
 
 build-hugo:
 	hugo --gc --config=config.yml

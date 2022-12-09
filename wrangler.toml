@@ -1,5 +1,6 @@
 name = "ironsecurity-index"
 type = "webpack"
+main = "./workers/index.js"
 
 workers_dev = false
 usage_model = 'bundled'
@@ -36,16 +37,12 @@ CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/reca
 CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
 [env.prd]
 routes      = ['iron.security/*', 'www.iron.security/*']
-zone_id     = '7e568a94bf4fe58607aec4b1677f80b1'
 account_id  = 'cc3c0a0320f6300a87a710edf2731e79'
 
 [build]
 command     = "hugo --minify --gc --config=config.yml"
 watch_dir   = "workers/"
 
-[build.upload]
-format      = "service-worker"
-
 [site]
 bucket      = "./generated/"
-entry-point = "./workers/"
+
