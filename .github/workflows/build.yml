@@ -20,7 +20,5 @@ jobs:
       name: wrangler
       uses: cloudflare/wrangler-action@2.0.0
       with:
-        apiToken: ${{ secrets.CF_API_TOKEN }}
         environment: prd
-        publish: false
         preCommands: wrangler build
