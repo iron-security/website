@@ -28,11 +28,11 @@ jobs:
       with:
         args: -o ${{ github.repository_owner }} -r ${{ github.event.repository.name }} -c main -e production
     -
+      name: Setup npm
+      run: npm install
+    -
       name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
-    -
-      name: hugo build
-      run: hugo --minify --gc --config=config.yml
     -
       name: publish
       uses: cloudflare/wrangler-action@2.0.0
