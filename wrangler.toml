@@ -1,5 +1,4 @@
 name = "ironsecurity-index"
-type = "webpack"
 main = "./workers/index.js"
 
 workers_dev = false
@@ -40,7 +39,7 @@ routes      = ['iron.security/*', 'www.iron.security/*']
 account_id  = 'cc3c0a0320f6300a87a710edf2731e79'
 
 [build]
-command     = "hugo --minify --gc --config=config.yml"
+command     = "npm run build"
 watch_dir   = "workers/"
 
 [site]

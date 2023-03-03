@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "server": "exec-bin node_modules/.bin/hugo server",
+    "build": "exec-bin node_modules/.bin/hugo --gc --minify"
+  },
+  "dependencies": {
+    "wrangler": "^2.12.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.88.1"
+  },
+  "devDependencies": {
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0",
+    "hugo-bin": "^0.99"
+  }
+}
