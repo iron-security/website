@@ -4,7 +4,7 @@
     "build": "exec-bin node_modules/.bin/hugo --gc --minify"
   },
   "dependencies": {
-    "wrangler": "^2.15.0"
+    "wrangler": "^2.16.0"
   },
   "otherDependencies": {
     "hugo": "0.88.1"
