@@ -220,6 +220,9 @@
     {{ partial "scripts.html" . }}
 
      <script src="https://www.google.com/recaptcha/api.js"></script>
+
+     {{ $pageJS := resources.Get "js/contact.js" | minify | fingerprint }}
+     <script src="{{ $pageJS.Permalink }}" integrity="{{ $pageJS.Data.Integrity }}" crossorigin="anonymous"></script>
 </body>
 
 </html>
