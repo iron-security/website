@@ -132,11 +132,11 @@ function updateTotals()
 
     if (edrTotal > 0)
     {
-        const removTotal = chkRemov.is(":checked") ? edrNum * 3 : 0;
+        const removTotal = chkRemov.is(":checked") ? edrNum * 5 : 0;
         lblRemov.text('€ ' + removTotal);
         total += removTotal;
 
-        const fwTotal = chkFirewall.is(":checked") ? edrNum * 4 : 0;
+        const fwTotal = chkFirewall.is(":checked") ? edrNum * 5 : 0;
         lblFirewall.text('€ ' + fwTotal);
         total += fwTotal;
 
