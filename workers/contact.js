@@ -50,7 +50,7 @@ export async function handleContactRequest(event)
   }
 
   // request is deemed a success! so try submit the email for sending
-  const mgResult = await fetch('https://api.mailgun.net/v3/' + MAILGUN_DOMAIN + '/messages', {
+  const mgResult = await fetch('https://api.eu.mailgun.net/v3/' + MAILGUN_DOMAIN + '/messages', {
     method: 'post',
     timeout: 10000,
     headers: {

@@ -96,7 +96,7 @@ export async function handleQuoteRequest(event)
     formData.append('attachment', new Blob([Buffer.from(pdfBytes)], { type: 'application/pdf' }), 'iron-quote.pdf'),
     formData.append('h:Reply-To', EMAIL_TO);
 
-    const mgResult = await fetch('https://api.mailgun.net/v3/' + MAILGUN_DOMAIN + '/messages', {
+    const mgResult = await fetch('https://api.eu.mailgun.net/v3/' + MAILGUN_DOMAIN + '/messages', {
         method: 'post',
         timeout: 10000,
         headers: {
@@ -107,8 +107,8 @@ export async function handleQuoteRequest(event)
 
     // return error if we couldn't send the email
     if (! mgResult.ok) {
-        const mgResponse = await mgResult.json();
-        console.log('mailgun call failed: ' + mgResult.status + ' ' + mgResult.statusText + ' -> ' + mgResponse.message);
+        const mgResponse = await mgResult.text();
+        console.log('mailgun call failed: ' + mgResult.status + ' ' + mgResult.statusText + ' -> ' + mgResponse);
         return new Response('500 Server Error', { status: 500 });
     }
 
