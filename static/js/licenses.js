@@ -126,7 +126,7 @@ function updateTotals()
     let total = 0;
 
     const edrNum = inEDR.val() !== "0" ? Number(inEDR.val()) : 0;
-    const edrTotal = edrNum * 45;
+    const edrTotal = edrNum * 50;
     lblEDR.text('€ ' + edrTotal);
     total += edrTotal;
 
