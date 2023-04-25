@@ -264,7 +264,7 @@ function generatePDF(request)
 
     if (request.quote.number_edr > 0)
     {
-        let itemCost = 45 * request.quote.number_edr;
+        let itemCost = 50 * request.quote.number_edr;
 
         doc.setFont(undefined, 'normal');
         docText(20, itemY, ('x' + request.quote.number_edr).padEnd(15) + ' Endpoint Detection & Response (incl. Threat Hunting)');
