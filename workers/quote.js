@@ -363,7 +363,7 @@ function generatePDF(request)
         let itemCost = totalCost * 0.12;
 
         doc.setFont(undefined, 'normal');
-        docText(20, itemY, 'x1'.toFixed(2).padEnd(15) + ' Support fee (12%)');
+        docText(20, itemY, 'x1'.padEnd(15) + ' Support fee (12%)');
         docText(-40, itemY, '€ ' + itemCost);
 
         itemY += 5;
