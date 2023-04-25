@@ -84,8 +84,7 @@ export async function handleQuoteRequest(event)
     // send quote via email
     const formData = new FormData();
     formData.append('from', 'IRON Quote System <hello@' + MAILGUN_DOMAIN + '>');
-    formData.append('to', EMAIL_TO);
-    // TODO: reset to: body.details.email,
+    formData.append('to', body.details.email);
     formData.append('subject', 'IRON quote requested from the website');
     formData.append('text', 
         'Dear ' + body.details.contact_name + ',\n\n' +
