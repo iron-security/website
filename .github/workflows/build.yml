@@ -14,6 +14,9 @@ jobs:
       name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
     -
+      name: npm install
+      run: npm install
+    -
       name: hugo build
       run: hugo --minify --gc --config=config.yml
     -
@@ -22,3 +25,4 @@ jobs:
       with:
         environment: prd
         command: build
+        apiToken: ${{ secrets.CF_API_TOKEN }}

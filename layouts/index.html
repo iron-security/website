@@ -468,7 +468,7 @@
                 <div class="swiper-wrapper px-1">
 
                   <div class="swiper-slide px-2 px-sm-1 py--4" data-swiper-slide-index="0">
-                    <div class="card strong-top-bordered-card">
+                    <div class="card b-1">
                         <div class="row no-gutters">
                             <div class="col-md-6 d-none d-xl-block">
                                 <div class="">
@@ -499,8 +499,41 @@
                     </div>
                   </div>
 
+                  <!--
+                  <div class="swiper-slide px-2 px-sm-1 py--4" data-swiper-slide-index="0">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-6 d-none d-xl-block">
+                                <div class="">
+                                    <figure class="m-0 image-background cover">
+                                      <img src="/img/customers/cresco.png" alt="Intigriti logo" class="img-responsive h-100" />
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-6">
+                              <div class="card-body d-flex flex-column justify-content-center">
+                                  <blockquote class="blockquote text-center mb-0">
+                                  
+                                      <figure class="mockup mb-4">
+                                        <img src="/img/customers/cresco-logo.png" alt="Intigriti logo" class="img-responsive" />
+                                      </figure>
+                                      
+                                      <p class="mb-4 mb-md-4">
+                                        Providing Managed EDR to our customers helps them protect their assets in a very cost-effective way,
+                                        using a trusted partner.
+                                      </p>
+                                      
+                                  </blockquote>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  -->
+                  
                   <div class="swiper-slide px-2 px-sm-1 py--4" data-swiper-slide-index="1">
-                    <div class="card strong-top-bordered-card">
+                    <div class="card">
                         <div class="row no-gutters">
                             <div class="col-md-6 d-none d-xl-block">
                                 <div class="">
@@ -535,46 +568,6 @@
               </div>
             </div>
         </section>
-
-      <!--
-      <section class="screenshots coverflow d-none d-md-block">
-        <div class="container">
-          <div class="section-heading text-center mb-n3">
-            <h2 class="bold display-4">
-              Platform Sneak-Peek
-            </h2>
-            <p class="text-secondary">
-              Just to give you an idea of how things will work in Q1 2022.
-            </p>
-          </div>
-          <div
-            class="swiper-container"
-            data-sw-centered-slides="true"
-            data-sw-autoplay="10000"
-            data-sw-show-items="1"
-            data-sw-space-between="0"
-            data-sw-breakpoints='{"1200": {"slidesPerView": 1}}'
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class="img-responsive"
-                  src="img/screens/platform_index.png"
-                  alt="..."
-                />
-              </div>
-            </div>
-
-            <div class="swiper-button swiper-button-next rounded-circle shadow">
-              <i class="fa fa-arrow-right text-primary"></i>
-            </div>
-            <div class="swiper-button swiper-button-prev rounded-circle shadow">
-              <i class="fa fa-arrow-left text-primary"></i>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
       
       {{ partial "footer.html" . }}
      
@@ -582,6 +575,8 @@
 
     {{ partial "scripts.html" . }}
 
+    {{ $pageJS := resources.Get "js/index.js" | minify | fingerprint }}
+    <script src="{{ $pageJS.Permalink }}" integrity="{{ $pageJS.Data.Integrity }}" crossorigin="anonymous"></script>
 </body>
 
 </html>

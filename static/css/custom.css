@@ -158,3 +158,8 @@ a.dropdown-item:hover {
     background-color: #374b63;
     height: 12px;
 }
+
+td.min {
+    width: 15%;
+    white-space: nowrap;
+}

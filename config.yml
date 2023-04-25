@@ -13,8 +13,6 @@ languages:
 
 
 disableHugoGeneratorInject: true
-#disableLiveReload: true
-
 enableRobotsTXT: true
 
 permalinks:

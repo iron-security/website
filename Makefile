@@ -16,7 +16,7 @@ dev-wrangler-build:
 	npx rangler build --env dev --log-level=debug --local
 
 dev-wrangler:
-	npx wrangler dev --env dev --log-level=debug --local --ip 127.0.0.1 --port $(PORT)
+	npx wrangler dev --env dev --log-level=debug --experimental-local --ip 127.0.0.1 --port $(PORT)
 
 build-hugo:
 	npm run build
