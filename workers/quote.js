@@ -276,7 +276,7 @@ function generatePDF(request)
 
     if (request.quote.number_edr > 0 && request.quote.has_removables === true)
     {
-        let itemCost = 3 * request.quote.number_edr;
+        let itemCost = 5 * request.quote.number_edr;
 
         doc.setFont(undefined, 'normal');
         docText(20, itemY, ('x' + request.quote.number_edr).padEnd(15) + ' Endpoint removable device management');
@@ -288,7 +288,7 @@ function generatePDF(request)
 
     if (request.quote.number_edr > 0 && request.quote.has_firewall === true)
     {
-        let itemCost = 4 * request.quote.number_edr;
+        let itemCost = 5 * request.quote.number_edr;
 
         doc.setFont(undefined, 'normal');
         docText(20, itemY, ('x' + request.quote.number_edr).padEnd(15) + ' Endpoint firewall management');
