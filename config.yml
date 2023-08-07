@@ -18,12 +18,6 @@ enableRobotsTXT: true
 permalinks:
   posts: /:year/:month/:title/
 
-outputFormats:
-    html:
-        minify:true
-     json:
-        minify:true
-
 minificationOptions:
     KeepConditionalComments: true
     KeepEndTags: false
