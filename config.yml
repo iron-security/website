@@ -19,7 +19,9 @@ permalinks:
   posts: /:year/:month/:title/
 
 outputFormats:
-    - html:
+    html:
+        minify:true
+     json:
         minify:true
 
 minificationOptions:
