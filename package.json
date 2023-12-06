@@ -6,7 +6,7 @@
   "dependencies": {
     "buffer": "^6.0.3",
     "jspdf": "^2.5.1",
-    "wrangler": "^3.6.0"
+    "wrangler": "^3.19.0"
   },
   "otherDependencies": {
     "hugo": "0.88.1"
