@@ -1,18 +1,20 @@
-name: imgcmp
+name: Image Optimisation
 
 on:
   push:
-    
+    branches: [master,main]
+
 jobs:
   build:
     name: Optimize images
     runs-on: ubuntu-latest
-
+    
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
-
+    
     steps:
-    - uses: 9sako6/imgcmp@v2.0.4
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    -
+      uses: 9sako6/imgcmp@v2.0.4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
