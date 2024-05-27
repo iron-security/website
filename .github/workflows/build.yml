@@ -21,7 +21,7 @@ jobs:
       run: hugo --minify --gc --config=config.yml
     -
       name: wrangler
-      uses: cloudflare/wrangler-action@v3.4.1
+      uses: cloudflare/wrangler-action@v3.6.1
       with:
         environment: prd
         command: build
