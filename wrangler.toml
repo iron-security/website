@@ -25,6 +25,7 @@ ENVIRONMENT = "dev"
 CAPTCHA_MIN_SCORE   = 0.5
 CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/recaptcha/ www.gstatic.com/recaptcha/; connect-src 'self'; child-src www.google.com/recaptcha/; style-src 'self' fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; media-src 'self'; prefetch-src 'self';"
 CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
+
 [env.dev]
 webpack_config = "workers/webpack.config.dev.js"
 
@@ -34,6 +35,7 @@ ENVIRONMENT = "prd"
 CAPTCHA_MIN_SCORE   = 0.5
 CSP_POLICY          = "default-src 'none'; script-src 'self' www.google.com/recaptcha/ www.gstatic.com/recaptcha/; connect-src 'self'; child-src www.google.com/recaptcha/; style-src 'self' fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; media-src 'self'; prefetch-src 'self';"
 CAPTCHA_VERIFY_URL  = "https://www.google.com/recaptcha/api/siteverify"
+
 [env.prd]
 routes      = ['iron.security/*', 'www.iron.security/*']
 account_id  = 'cc3c0a0320f6300a87a710edf2731e79'

@@ -41,7 +41,7 @@ jobs:
       uses: cloudflare/wrangler-action@v3.6.1
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
-        environment: prd
+        command: deploy --env prd
     -
       name: set deployment status
       uses: niklasmerz/github-deployment-action@master
