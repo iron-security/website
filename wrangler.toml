@@ -2,7 +2,7 @@ name = "ironsecurity-index"
 main = "./workers/index.js"
 
 workers_dev = false
-usage_model = 'bundled'
+
 compatibility_flags = []
 compatibility_date  = "2021-09-20"
 

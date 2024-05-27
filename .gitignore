@@ -10,3 +10,4 @@ dev.env
 .dccache
 .vscode/
 *.dev
+.wrangler/
