@@ -7,6 +7,6 @@
   "author": "Niels <niels@iron.security>",
   "license": "MIT",
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "~0.3.2"
+    "@cloudflare/kv-asset-handler": "~0.3.4"
   }
 }
