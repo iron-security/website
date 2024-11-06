@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "exec-bin": "^1.0.0",
-    "hugo-bin": "^0.132",
+    "hugo-bin": "^0.134",
     "hugo-installer": "^4.0"
   }
 }
